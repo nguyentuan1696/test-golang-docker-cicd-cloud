@@ -54,9 +54,9 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
           
-      # Verify 
-      - name: Verify
-        run: echo ${{ steps.docker_build.outputs.digest }}
+      # # Verify 
+      # - name: Verify
+      #   run: echo ${{ steps.docker_build.outputs.digest }}
         
       # Executing remote ssh commands using password 
       - name: executing remote ssh commands using password
